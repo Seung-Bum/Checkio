@@ -2,7 +2,7 @@
 
 function endZeros(num) {
     let count = 0;
-    str_num = String(num);
+    let str_num = String(num);
     for (let i = str_num.length-1; i >= 0; i--) {
         if (str_num[i] != '0') {
             break
