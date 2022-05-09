@@ -2,21 +2,21 @@
 // replaceFirst([1]) == [1]
 // replaceFirst([]) == []
 
-// 첫번째 숫자와 마지막 숫자의 위치를 바꾸기
+// 첫번째 숫자를 마지막으로 보내기
 
 function replaceFirst(values) {
 
     let temp
 
     if (values.length == 1 || values.length == 0) {
-        // console.log(values)
+        console.log(values)
         return values
         
     } else {
-        temp = values[values.length-1]
-        values[values.length-1] = values[0]
-        values[0] = temp
-        // console.log(values)
+        temp = values[0]
+        values = values.slice(1, values.length)
+        values.push(temp) 
+        console.log(values)
         return values
     }
     
