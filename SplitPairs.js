@@ -4,9 +4,6 @@
 // splitPairs('a') == ['a_']
 // splitPairs('') == []
 
-
-
-
 function splitPairs(text) {
 
     let textList = []
