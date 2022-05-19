@@ -5,6 +5,13 @@ function firstWord(text) {
     const regExp = /[a-zA-Z]/g; // 영어 if(regExp.test(str))
 
     let strArr = text.split(/\s+/) // 자바스크립트 정규식, 공백기준으로 분리해준다.
+    if( strArr.length == 1 ) {
+        if( strArr[0].indexOf('.') != -1 ) {
+            return strArr[0].split('.')[0]
+        } else {
+            return strArr[0]
+        }
+    }
 
     for(let i=0; i < strArr.length; i++) {
         if( regExp.test(strArr[i]) ) {
@@ -24,3 +31,4 @@ function firstWord(text) {
 firstWord("Hello world")
 firstWord("greetings, friends")
 firstWord(" a word ")
+firstWord("Hello.World")
