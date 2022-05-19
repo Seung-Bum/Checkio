@@ -7,6 +7,7 @@
 // sumNumbers('5 plus 6 is') == 11
 // sumNumbers('') == 0
 
+// 문자열 중 숫자를 골라내서 더하기
 
 function sumNumbers(text) {
     let t = text.split(' ')
