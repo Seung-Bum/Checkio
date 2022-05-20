@@ -1,6 +1,8 @@
 // firstWord("Hello world") == "Hello"
 // firstWord("greetings, friends") == "greetings"
 
+// 문자열에 첫단어를 확인해서 리턴하기
+
 function firstWord(text) {
     const regExp = /[a-zA-Z]/g; // 영어 if(regExp.test(str))
 
