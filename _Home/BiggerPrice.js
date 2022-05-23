@@ -25,20 +25,22 @@
 // ex) 3-1 = 2, 3-2 = 1  
 function biggerPrice(number, data) {
 
-    let result = data.sort(function(a,b) {
+    let resultList = []
+    let result = data.sort(function(a,b) { // 이 부부분은 잘 기억 해두자
         return a.price - b.price;
     }).reverse();
 
     if (number == null || number == 0) {
         return
     } else {
-        resultList = []
+        
         for(let i=0; i < number; i++) {
             resultList.push(result[i])
         }
-        console.log(resultList)
-        return resultList;
+        
     }
+    console.log(resultList)
+    return resultList;
 }
 
 
